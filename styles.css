@@ -347,8 +347,8 @@ p {
       object-fit: cover;
       object-position: center;
       min-height: 150px;
-      max-height: 34vh;
-      max-width: 34vw;
+      max-height: 50vh;
+      max-width: 50vw;
       width: 100%;
       border-radius: 0.25rem;
     }
@@ -372,6 +372,20 @@ p {
 
     .divider {
       margin: 50px auto;
+    }
+
+    .nav-item a {
+      transition: all 0.2s ease-in-out;
+    }
+
+    .nav-item:first-child a:hover {
+      color: var(--cPu);
+    }
+
+    span svg {
+      display: inline-block;
+      max-width: 150px;
+      margin: auto 0.5rem;
     }
 
 /* <<<<<< 03 — STYLES <<<<<< */

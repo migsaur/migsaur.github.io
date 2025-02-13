@@ -395,7 +395,7 @@ p {
     text-align: center !important;
   }
 
-  .tSquare, .t916 {
+  .tSquare, .t916, .tFree {
     aspect-ratio: initial;
     /* width: auto;
     height: auto; */
@@ -425,5 +425,9 @@ p {
 
   .bgGallery img {
     outline: 2px solid white;
+  }
+
+.msHero::before {
+    background-image: linear-gradient(90deg, #161616E6 50%, #161616E6), url(Media/flecha.png);
   }
 }

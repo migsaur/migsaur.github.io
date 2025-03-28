@@ -26,6 +26,30 @@
 	
 }
 
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.skip {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.skip:focus {
+  position: static;
+  width: auto;
+  height: auto;
+}
+
 
 
 
@@ -380,6 +404,7 @@ textarea {
 	max-width: 100%;
 	min-width: 150px;
 	min-height: 150px;
+	margin-bottom: 0.8rem;
 }
 
 .bio span {
@@ -539,7 +564,9 @@ textarea {
 .txW8 {font-weight: 800;}
 .txW9 {font-weight: 900;}
 
-
+.mobileMenu {
+	display: none;
+}
 
 
 
@@ -547,6 +574,39 @@ textarea {
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>TABLET*/
 @media (max-width: 1024px) {
+
+	.mobileMenu {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 3px;
+		border: 1px solid;
+		height: 2rem;
+		width: 2rem;
+		color: var(--cd2);
+		border-radius: 7px;
+	}
+
+	.mobileMenu i {
+		vertical-align:baseline;
+		line-height: 1;
+	}
+
+	.mobileWrap {
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+	}
+
+	.hide {
+		display: none;
+	}
+
+	nav, nav ul {
+		flex-flow: column;
+	}
 
 	.flexGallery div {
 		width: auto;
@@ -574,9 +634,7 @@ textarea {
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>PHONE*/
 @media (max-width: 768px) {
 
-	nav ul {
-		display: none;
-	}
+
 
 	section {
 		padding: 2rem 5%;
@@ -665,6 +723,8 @@ textarea {
 	.flxAS {
 		align-items: center;
 	}
-
+	.txCenMob {
+		text-align: center;
+	}
 	
 }

@@ -14,13 +14,15 @@
 <body>
 
   <header>
+    <a class="sr-only" href="#content">Skip to main content</a>
 
     <nav>
-      <a href="https://www.sparktechs.com/" target="_blank"><img class="nav-logo" src="Media/spark_logo.png"></a>
-      <ul>
-        <li><a href="#services" target="_self">Services</a></li>
-        <li><a href="#about" target="_self">About</a></li>
-        <li><a href="#contact" target="_self">Contact</a></li> 
+      <div class="mobileWrap"><a href="https://www.sparktechs.com/" target="_blank"><img class="nav-logo" src="Media/spark_logo.png"></a>
+      <a class="mobileMenu" id="menuButton"><i class="fa-solid fa-bars fa-lg"></i></a></div>
+      <ul id="navList" class="hide">
+        <li><a class="navElement" href="#services" target="_self">Services</a></li>
+        <li><a class="navElement" href="#about" target="_self">About</a></li>
+        <li><a class="navElement" href="#contact" target="_self">Contact</a></li>
       </ul>
 
     </nav>
@@ -129,8 +131,8 @@
       <div class="row">
         <div class="col">
           <div class="cardGallery txCen gap2"> 
-            <div class="card bgBlu" style="grid-column: 1 / 4; grid-row: 1 / 2">
-              <h2 class="txL sz-tx3">About Us</h2>
+            <div class="card bgBlu" style="grid-column: 1 / 4; grid-row: 1 / 2; background-color: #AFB8CB80">
+              <h2 class=" sz-tx2">About Us</h2>
             </div>
             <div class="card" style="grid-column: 1 / 3; grid-row: 2 / 4">
               <h3>Location</h3>
@@ -164,20 +166,20 @@
       </div>
       <div class="row">
         <div class="col">
-          <div class="socialPanel gap3">
-            <h3 class="txL txW2 sz-tx2">Take a closer look at how we <strong>live</strong> the <span class="txGrad1 txW9" style="background-image: linear-gradient(90deg,#ffffff, var(--spk-lem));">SparkTech Experience</span>!</h3>
+          <div class="socialPanel gap2">
+            <h3 class="txL txW2 sz-tx2 txCen">Take a closer look at how we <strong>live</strong> the <span class="txGrad1 txW9" style="background-image: linear-gradient(90deg,#ffffff, var(--spk-lem));">SparkTech Experience</span>!</h3>
             <hr class="hr-divider"> 
             <div class="flex gap2" style="max-width: 960px;">
               <img class="socImg" src="https://scontent.fmxl1-1.fna.fbcdn.net/v/t39.30808-6/486543405_1196849845778855_8374708847283417941_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeEX6oreUBc2xH23Wk5F9MFipU8V43mTq0GlTxXjeZOrQZ3LSKbjeufmlVN-jpOp8d4&_nc_ohc=9dI1HafVByYQ7kNvgGMCTzs&_nc_oc=AdlAXbwJ7g8klehoVFhLKF6re0LtJuD1vgnn5KnCyBgWuqpu2qWpLTDUHUhVuEGYQx8&_nc_zt=23&_nc_ht=scontent.fmxl1-1.fna&_nc_gid=sApqUWBdm8sTaabupTdJrw&oh=00_AYFmoAjnt0b5D3wZSz2Znlk5fEJWu2ovGOEhzV78fyjZ0w&oe=67EC9DF7" alt="Spark Technologies team members engaging in aerobic workout.">
               <div class="flexC gap1">
-                <h4 class="sz-tx3 txL">Forumfitness Spark</h4>
-                <p class="txL sz-tx12">Our incredible Forumfitness Spark🤸‍♂️ with our special guest: trainer Roxana Mendoza, rising motivation to reach higher goals ¡Thank you for joining us Roxana Mendoza Studio Fitt !✨</p>
+                <h4 class="sz-tx2 txL txCenMob">Forumfitness Spark</h4>
+                <p class="txL sz-tx12 txCenMob">Our incredible Forumfitness Spark🤸‍♂️ with our special guest: trainer Roxana Mendoza, rising motivation to reach higher goals ¡Thank you for joining us Roxana Mendoza Studio Fitt !✨</p>
               </div>
 
             </div>
             <hr class="hr-divider"> 
             <div class="flex gap2">
-              <div style="padding: 2rem;"><h3 class="sz-tx2 txL">Meet part of our team:</h3></div>
+              <div style="padding: 2rem;"><h3 class="sz-tx2 txL txCen">Meet part of our team:</h3></div>
               <div class="flexGallery gap2" style="align-items: flex-start; flex: 1 0 70%">
                 <div class="bio">
                   <img src="https://cdn.prod.website-files.com/65dd4232d5aad605cabbcec4/65ea021198b3644485c55542_Meet%20our%20amazing%20team-4-p-500.jpg">
@@ -249,6 +251,7 @@
     </div>
 
   </footer>
+  
   
 
   <script src="./script.js"></script>
